@@ -2,8 +2,8 @@ import { NextResponse } from "next/server";
 
 import connectDB from "@/lib/db";
 import Group from "@/lib/modals/group";
-import { withErrorHandler } from "@/middleware/error-handler";
-import { composeMiddlewares } from "@/middleware/compose-middlewares";
+import { withErrorHandler } from "@/lib/middleware/error-handler";
+import { composeMiddlewares } from "@/lib/middleware/compose-middlewares";
 import User from "@/lib/modals/user";
 
 const getHandler = async (request: Request) => {
