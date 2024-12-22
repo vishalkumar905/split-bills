@@ -31,3 +31,13 @@ body {
     text-wrap: balance;
   }
 }
+
+@layer base {
+  /* body {
+    @apply bg-background text-foreground;
+  } */
+
+  .bg-background {
+    background-color: #fff;
+  }
+}

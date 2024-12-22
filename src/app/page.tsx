@@ -2,8 +2,8 @@
 
 /* eslint-disable @next/next/no-img-element */
 import Image from "next/image";
-import { signIn } from "next-auth/react"
-import SignIn from "./components/sign-in";
+import { signIn, useSession } from "next-auth/react"
+// import SignIn from "./components/sign-in";
 import { useState } from "react";
 import { useRouter } from "next/navigation";
 
@@ -48,13 +48,17 @@ export default function Home() {
     console.log({ email, password })
   }
 
+  const session = useSession();
+
+  console.log({ session })
+
   return (
     <>
       <div className="flex min-h-full flex-1 flex-col justify-center px-6 py-12 lg:px-8">
         <div className="sm:mx-auto sm:w-full sm:max-w-sm">
           <img
             alt="Your Company"
-            src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
+            src="https://tailwindui.com/plus/img/logos/mark.svg?color=indigo&shade=600"
             className="mx-auto h-10 w-auto"
           />
           <h2 className="mt-10 text-center text-2xl font-bold leading-9 tracking-tight text-gray-900">
@@ -118,7 +122,7 @@ export default function Home() {
           </p>
 
           <div className="flex mt-10 gap-10">
-            <button className="w-1/2 cursor-pointer text-center rounded-md border-2 py-1.5">Google</button>
+            <button onClick={() => signIn('google')} className="w-1/2 cursor-pointer text-center rounded-md border-2 py-1.5">Google</button>
             <button className="w-1/2 cursor-pointer text-center rounded-md border-2 py-1.5">Github</button>
           </div>
 

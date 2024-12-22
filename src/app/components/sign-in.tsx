@@ -1,5 +1,3 @@
-"use server";
-
 import { auth, signIn } from "@/auth"
  
 export default async  function SignIn() {
