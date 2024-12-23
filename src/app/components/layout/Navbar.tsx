@@ -35,9 +35,7 @@ const Navbar = () => {
           <span className="ml-2 text-xl font-bold">SplitBills</span>
         </div>
         <div className="flex items-center space-x-4">
-          <Button
-            variant="ghost"
-          >
+          <Button>
             Logout
           </Button>
 
