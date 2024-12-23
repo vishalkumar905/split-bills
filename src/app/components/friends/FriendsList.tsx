@@ -3,14 +3,14 @@ import { ScrollArea } from '@/app/components/ui/scroll-area';
 import { Avatar, AvatarFallback, AvatarImage } from '@/app/components/ui/avatar';
 
 interface Friend {
-  id: number;
+  id: string | number;
   name: string;
   email: string;
   avatar?: string;
 }
 
 interface FriendsListProps {
-  friends: Friend[];
+  friends: any[];
 }
 
 export function FriendsList({ friends }: FriendsListProps) {

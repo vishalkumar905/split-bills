@@ -9,7 +9,7 @@ interface Friend {
 }
 
 interface BalanceOverviewProps {
-  friends: Friend[];
+  friends: any[];
 }
 
 export default function BalanceOverview({ friends }: BalanceOverviewProps) {
