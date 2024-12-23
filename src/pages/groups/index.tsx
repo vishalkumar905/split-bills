@@ -12,7 +12,7 @@ import BalanceOverview from '@/app/components/BalanceOverview';
 import { useToast } from '@/app/hooks/use-toast';
 import AddFriendForm from '@/app/components/AddFriendForm';
 import { CreateGroupForm } from '@/app/components/groups/CreateGroupForm';
-import { Sidebar } from '@/app/components/Layout/Sidebar';
+import { Sidebar } from '@/app/components/layout/Sidebar';
 import { GroupsList } from '@/app/components/groups/GroupsList';
 import { FriendsList } from '@/app/components/friends/FriendsList';
 import { useGroups } from '@/context/GroupsContext';
