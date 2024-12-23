@@ -1,3 +1,4 @@
+import { Toaster } from "../ui/toaster"
 import Navbar from "./Navbar"
 import SiderBar from "./Sidebar"
 
@@ -6,6 +7,7 @@ const Layout = ({ children }: any) => {
     <Navbar />
     {/* <SiderBar/> */}
     {children}
+    <Toaster />
   </div>
 }
 

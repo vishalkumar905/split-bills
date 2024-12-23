@@ -52,6 +52,7 @@ export default function ExpenseList() {
                       <AvatarImage src={expense.avatar} />
                       <AvatarFallback>{expense.paidBy[0]}</AvatarFallback>
                     </Avatar>
+
                     <span>{expense.paidBy} paid</span>
                     <span>•</span>
                     <span>{expense.date}</span>
