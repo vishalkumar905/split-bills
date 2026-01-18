@@ -18,7 +18,7 @@ export async function middleware(request: NextRequest) {
 
   if (isAuthenticated) {
     if (pathname === '/') {
-      return NextResponse.redirect(new URL('/dashboard', request.url))
+      return NextResponse.redirect(new URL('/groups', request.url))
     }
   }
 
@@ -26,7 +26,6 @@ export async function middleware(request: NextRequest) {
     console.log(request.url, new URL('/', request.url))
 
     return NextResponse.redirect(new URL('/', request.url))
-    // return NextResponse.redirect(request.url)
   }
 
   return NextResponse.next();
